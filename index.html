@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammed Emin Solakoğlu | Software Engineer</title>
+    <!--[cite: 1] -->
+    <meta name="description" content="Muhammed Emin Solakoğlu | Software Engineer. Building scalable backend services with C#, .NET Core, React, and RESTful APIs." />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header id="main-header">
+      <nav>
+        <a href="#home" class="nav-link active home-link">
+          <span class="nav-text" data-i18n="nav-home">Home</span>
+          <img src="emin.jpg" class="nav-profile-mini" alt="Profile photo" /> <!--[cite: 2] -->
+        </a>
+
+        <a href="#about" class="nav-link" data-i18n="nav-about">About</a>
+        <a href="#skills" class="nav-link" data-i18n="nav-skills">Skills</a>
+        <a href="#projects" class="nav-link" data-i18n="nav-projects">Projects</a>
+        <a href="#contact" class="nav-link" data-i18n="nav-contact">Contact</a>
+      </nav>
+      <div class="header-controls">
+        <button id="theme-toggle" class="theme-btn" onclick="toggleTheme()" aria-label="Toggle Dark Mode">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+        <div class="lang-switch-container">
+          <span class="lang-label">EN</span>
+          <label class="switch">
+            <input type="checkbox" id="lang-toggle" onchange="toggleLanguage()">
+            <span class="slider round"></span>
+          </label>
+          <span class="lang-label">TR</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="home" class="section home-section">
+        <img
+          src="emin.jpg"
+          alt="Portrait of Muhammed Emin Solakoğlu"
+          class="profile-photo"
+        /> <!--[cite: 2] -->
+        <div class="home-content">
+          <h1>Muhammed Emin Solakoğlu</h1> <!--[cite: 1] -->
+          <span class="highlight-text" data-i18n="role-title"
+            >Full Stack Developer | C# & .NET</span
+          >
+
+          <p data-i18n="home-p1" style="max-width: 600px; margin: 0 auto 15px auto">
+            I’m a Full Stack Developer with hands-on experience building and shipping web applications. I focus on developing clean, robust backend services using C#, .NET Core, and RESTful APIs, paired with modern frontend development using React. <!--[cite: 1] --> Operating within Agile methodologies, I build reliable, scalable architectures utilizing SQL databases, N-tier design, and CI/CD pipelines. <!--[cite: 1] -->
+          </p>
+          <p data-i18n="home-p2" style="max-width: 600px; margin: 0 auto">
+            I graduated from Marmara University with a degree in Computer Engineering. <!--[cite: 1] --> I have delivered production-ready integrations for Doğuş Group companies and actively leverage AI-assisted tools, LLMs, and Knowledge Graphs to engineer innovative software solutions. <!--[cite: 1] -->
+          </p>
+        </div>
+      </section>
+
+      <section id="about" class="section about-section">
+        <h2 data-i18n="about-title">About</h2>
+        <div class="about-container">
+          <div class="about-summary">
+            <div class="module-box">
+              <ul class="summary-list">
+                <li data-i18n="about-li1">
+                  I engineer backend systems utilizing C#, ASP.NET Core MVC, and Web API, integrating robust relational databases like PostgreSQL and MSSQL. <!--[cite: 1] --> I apply Clean Architecture, MediatR, AutoMapper, and OOP/SOLID principles to ensure long-term maintainability. <!--[cite: 1] -->
+                </li>
+                <li data-i18n="about-li2">
+                  I have strong full-stack capabilities, seamlessly connecting React frontends with .NET Core APIs. <!--[cite: 1] --> I implement secure authentication mechanisms, such as OIDC Azure AD, alongside central logging systems like the ELK stack. <!--[cite: 1] -->
+                </li>
+                <li data-i18n="about-li3">
+                  My DevOps toolchain includes Git, Azure DevOps, Docker, and CI/CD pipelines (such as Jenkins). <!--[cite: 1] --> I am highly comfortable working in Agile/Scrum teams, participating in daily scrums, refinements, and retrospectives. <!--[cite: 1] -->
+                </li>
+                <li data-i18n="about-li4">
+                  During my long-term tenure at Doğuş Technology, I architected the 'Interaktif Envanter' CMDB application from scratch and successfully delivered end-to-end integrations across 10+ corporate applications. <!--[cite: 1] -->
+                </li>
+                <li data-i18n="about-li5">
+                  I am deeply interested in AI integration. My graduation project, TalentForge, utilized Qwen2.5/Llama-3.1 LLMs, FastAPI, and Neo4j Knowledge Graphs to create an explainable HR matching architecture. <!--[cite: 1] -->
+                </li>
+              </ul>
+
+              <h4
+                class="module-title"
+                style="text-align: left; margin-top: 15px; margin-bottom: 15px"
+              >
+                <i class="fa-solid fa-layer-group"></i> <span data-i18n="focus-areas">Focus Areas</span>
+              </h4>
+
+              <div class="learning-areas-grid">
+                <div class="learning-area-card">
+                  <i class="fa-solid fa-code"></i>
+                  <span data-i18n="focus-prog">Programming (C#/OOP)</span>
+                </div>
+                <div class="learning-area-card">
+                  <i class="fa-solid fa-database"></i>
+                  <span data-i18n="focus-db">Database (SQL/NoSQL)</span>
+                </div>
+                <div class="learning-area-card">
+                  <i class="fa-solid fa-globe"></i>
+                  <span data-i18n="focus-web">Web Development</span>
+                </div>
+                <div class="learning-area-card">
+                  <i class="fa-solid fa-server"></i>
+                  <span data-i18n="focus-sys">System Architectures</span>
+                </div>
+                <div class="learning-area-card">
+                  <i class="fa-solid fa-cloud-arrow-down"></i>
+                  <span data-i18n="focus-api">RESTful APIs</span>
+                </div>
+                <div class="learning-area-card">
+                  <i class="fa-solid fa-robot"></i>
+                  <span data-i18n="focus-ai">AI & LLM Integration</span>
+                </div>
+                <div class="learning-area-card">
+                  <i class="fa-brands fa-docker"></i>
+                  <span data-i18n="focus-docker">Docker & CI/CD</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-timeline">
+            <div class="module-box education-box">
+              <h4 class="module-title">
+                <i class="fa-solid fa-graduation-cap"></i> <span data-i18n="edu-title">Education</span>
+              </h4>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 data-i18n="edu-degree">B.Sc. in Computer Engineering, Marmara University</h4> <!--[cite: 1] -->
+                  <p class="timeline-date" data-i18n="edu-date">September 2022 - June 2026</p> <!--[cite: 1] -->
+                  <p class="timeline-desc" data-i18n="edu-desc">
+                    Built a strong foundation in software engineering, distributed systems, and AI, graduating with the standout TalentForge project utilizing LLMs and Knowledge Graphs. <!--[cite: 1] -->
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="module-box experience-box">
+              <h4 class="module-title">
+                <i class="fa-solid fa-briefcase"></i> <span data-i18n="exp-title">Experience</span>
+              </h4>
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 data-i18n="exp-1-title">Software Developer (Long-Term Intern), Doğuş Technology</h4> <!--[cite: 1] -->
+                  <p class="timeline-date" data-i18n="exp-1-date">July 2025 - July 2026 · Full-time</p> <!--[cite: 1] -->
+                  <p class="timeline-location" data-i18n="exp-1-loc">Remote</p> <!--[cite: 1] -->
+                  <p class="timeline-desc" data-i18n="exp-1-desc">
+                    Architected the 'Interaktif Envanter' CMDB application using Clean Architecture and PostgreSQL. <!--[cite: 1] --> Delivered 10+ corporate app integrations linking React frontends with .NET Core APIs. Implemented OIDC Azure AD, resolved complex production bugs, and developed secure CRM integrations for a GenAI corporate chatbot. <!--[cite: 1] -->
+                  </p>
+                </div>
+              </div>
+
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                  <h4 data-i18n="exp-2-title">Software Developer (Summer Intern), Berkut Technology</h4> <!--[cite: 1] -->
+                  <p class="timeline-date" data-i18n="exp-2-date">June 2024 - September 2024</p> <!--[cite: 1] -->
+                  <p class="timeline-location" data-i18n="exp-2-loc">Remote</p> <!--[cite: 1] -->
+                  <p class="timeline-desc" data-i18n="exp-2-desc">
+                    Developed a zero-waste delivery plugin for veganpazaryeri.com using .NET and nopCommerce. <!--[cite: 1] --> Designed the data layer with MSSQL and Entity Framework, applying solid design patterns for scalable architecture. <!--[cite: 1] -->
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section skills-section">
+        <h2 data-i18n="skills-title">Skills</h2>
+        <div class="skills-grid-container">
+          <div class="skills-card">
+            <h3><i class="fa-solid fa-microchip"></i> <span data-i18n="skills-tech">Technical Skills</span></h3>
+            <div class="skills-grid technical">
+              <span>C#</span> <!--[cite: 1] -->
+              <span>.NET Core</span> <!--[cite: 1] -->
+              <span>ASP.NET Core MVC</span> <!--[cite: 1] -->
+              <span>JavaScript</span> <!--[cite: 1] -->
+              <span>TypeScript</span> <!--[cite: 1] -->
+              <span>React</span> <!--[cite: 1] -->
+              <span>Entity Framework Core</span> <!--[cite: 1] -->
+              <span>LINQ</span> <!--[cite: 1] -->
+              <span>Clean Architecture</span> <!--[cite: 1] -->
+              <span>MediatR</span> <!--[cite: 1] -->
+              <span>AutoMapper</span> <!--[cite: 1] -->
+              <span>RESTful APIs</span> <!--[cite: 1] -->
+              <span>PostgreSQL</span> <!--[cite: 1] -->
+              <span>MSSQL</span> <!--[cite: 1] -->
+              <span>SQLite</span> <!--[cite: 1] -->
+              <span>Git / GitHub</span> <!--[cite: 1] -->
+              <span>Azure DevOps</span> <!--[cite: 1] -->
+              <span>Docker</span> <!--[cite: 1] -->
+              <span>Jenkins / CI/CD</span> <!--[cite: 1] -->
+              <span>ELK Stack</span> <!--[cite: 1] -->
+              <span>Python</span> <!--[cite: 1] -->
+              <span>FastAPI</span> <!--[cite: 1] -->
+              <span>Neo4j</span> <!--[cite: 1] -->
+            </div>
+          </div>
+
+          <div class="skills-card">
+            <h3><i class="fa-solid fa-handshake"></i> <span data-i18n="skills-soft">Soft Skills & Methods</span></h3>
+            <div class="skills-grid soft">
+              <p data-i18n="soft-1">Agile & Scrum Methodologies</p> <!--[cite: 1] -->
+              <p data-i18n="soft-2">Problem Solving & Complex Debugging</p> <!--[cite: 1] -->
+              <p data-i18n="soft-3">Effective Team Collaboration</p> <!--[cite: 1] -->
+              <p data-i18n="soft-4">AI-Assisted Development</p> <!--[cite: 1] -->
+              <p data-i18n="soft-5">Systems Architecture Design</p> <!--[cite: 1] -->
+              <p data-i18n="soft-6">Detail-oriented & Analytical Thinking</p> <!--[cite: 1] -->
+            </div>
+            <p class="soft-skills-summary" data-i18n="soft-summary">
+              Fluent in Turkish (Native) and English (B2). <!--[cite: 1] --> I adapt quickly to new technologies and excel at managing multiple concurrent projects while maintaining clean code standards. <!--[cite: 1] -->
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section projects-section">
+        <h2 data-i18n="projects-title">Projects</h2>
+
+        <div class="project-item">
+          <h3 data-i18n="proj-1-title">TalentForge — AI-powered HR Matching System</h3> <!--[cite: 1] -->
+          <div class="project-tags">
+            <span>Python</span><span>FastAPI</span><span>Qwen2.5 / Llama-3.1</span><span>Neo4j (Knowledge Graphs)</span><span>RESTful API</span> <!--[cite: 1] -->
+          </div>
+          <p class="project-description" data-i18n="proj-1-desc">
+            An end-to-end AI-powered HR matching platform developed as a graduation project. Built high-performance RESTful APIs using FastAPI and integrated Large Language Models alongside Neo4j Knowledge Graphs to deliver a highly explainable, scalable system architecture. <!--[cite: 1] -->
+          </p>
+          <a
+            href="https://github.com/Eminsolakoglu" 
+            target="_blank"
+            class="button"
+            ><span data-i18n="btn-github">View on GitHub</span> <i class="fa-brands fa-github"></i
+          ></a> <!--[cite: 1] -->
+        </div>
+
+      </section>
+
+      <section id="contact" class="section contact-section">
+        <h2 data-i18n="contact-title">Contact</h2>
+        <p class="contact-intro-text" data-i18n="contact-intro">
+          I am always open to discussing new projects, creative ideas, or opportunities to be part of your visions. Let's connect!
+        </p>
+
+        <div class="social-links-container">
+          <a
+            href="https://github.com/Eminsolakoglu" 
+            target="_blank"
+            class="button"
+            ><i class="fa-brands fa-github"></i> GitHub</a
+          > <!--[cite: 1] -->
+          <a
+            href="https://www.linkedin.com/in/meminsolakoglu/" 
+            target="_blank"
+            class="button"
+            ><i class="fa-brands fa-linkedin"></i> LinkedIn</a
+          >
+        </div>
+
+        <br />
+
+        <div class="contact-details-grid">
+          <div class="contact-info-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h4 data-i18n="contact-email">Email Address</h4>
+            <a href="mailto:eminsolakoglu@outlook.com" class="contact-link"
+              >eminsolakoglu@outlook.com</a
+            > <!--[cite: 1] -->
+          </div>
+
+          <div class="contact-info-card">
+            <i class="fa-solid fa-phone"></i>
+            <h4 data-i18n="contact-phone">Phone Number</h4>
+            <a href="tel:+905357482552" class="contact-link"
+              >+90 535 748 25 52</a
+            > <!--[cite: 1] -->
+          </div>
+
+          <div class="contact-info-card">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4 data-i18n="contact-loc">Location</h4>
+            <p data-i18n="loc-city">Istanbul, Türkiye</p> <!--[cite: 1] -->
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="main-footer">
+      <p data-i18n="footer-text">© 2026 Muhammed Emin Solakoğlu. All rights reserved.</p>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script>
+      let currentLang = 'en';
+
+      function toggleLanguage() {
+        const isChecked = document.getElementById('lang-toggle').checked;
+        currentLang = isChecked ? 'tr' : 'en';
+        document.documentElement.lang = currentLang;
+
+        document.querySelectorAll('[data-i18n]').forEach(elem => {
+          const key = elem.getAttribute('data-i18n');
+          if (translations[currentLang][key]) {
+            elem.innerText = translations[currentLang][key];
+          }
+        });
+      }
+
+      // Existing intersection observer and smooth scrolling code
+      const sections = document.querySelectorAll("section[id]");
+      const navLinks = document.querySelectorAll(".nav-link");
+      const options = {
+        root: null,
+        rootMargin: "-40% 0px -40% 0px",
+        threshold: 0,
+      };
+      const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const sectionId = entry.target.id;
+            navLinks.forEach((link) => link.classList.remove("active"));
+            const newActiveLink = document.querySelector(
+              `.nav-link[href="#${sectionId}"]`
+            );
+            if (newActiveLink) {
+              newActiveLink.classList.add("active");
+            }
+          }
+        });
+      }, options);
+      sections.forEach((section) => {
+        observer.observe(section);
+      });
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          document
+            .querySelector(this.getAttribute("href"))
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      function toggleTheme() {
+        document.body.classList.toggle('dark-mode');
+        const themeBtnIcon = document.querySelector('#theme-toggle i');
+        if (document.body.classList.contains('dark-mode')) {
+          themeBtnIcon.classList.replace('fa-moon', 'fa-sun');
+        } else {
+          themeBtnIcon.classList.replace('fa-sun', 'fa-moon');
+        }
+      }
+    </script>
+  </body>
+</html>
