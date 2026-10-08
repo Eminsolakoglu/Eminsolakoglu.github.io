@@ -1,2 +1,0 @@
-# Eminsolakoglu.github.io
-Portfolio 
